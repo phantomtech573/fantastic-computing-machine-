@@ -1,2 +1,2 @@
 # fantastic-computing-machine
-.io/pimpn-droid-knot/XVOiBO/compare/XVOiBO-B
+.io/pimpn-droid-knot/XVOiBO/XVOiBO-B
