@@ -1,3 +1,4 @@
+`
 > ## Documentation Index
 > Fetch the complete documentation index at: https://modelcontextprotocol.io/llms.txt
 > Use this file to discover all available pages before exploring further.
@@ -34,7 +35,7 @@ MCP provides several tools for debugging at different levels:
 ## Debugging in Claude Desktop
 
 ### Checking server status
-
+```
 The Claude.app interface provides basic server status information:
 
 1. Click the <img src="https://mintcdn.com/mcp/C7bOrAKftvTohitd/images/claude-desktop-mcp-plug-icon.svg?fit=max&auto=format&n=C7bOrAKftvTohitd&q=85&s=54a3607debed10d16418e37a17288d22" style={{display: 'inline', margin: 0, height: '1.3em'}} data-og-width="32" width="32" data-og-height="32" height="32" data-path="images/claude-desktop-mcp-plug-icon.svg" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/mcp/C7bOrAKftvTohitd/images/claude-desktop-mcp-plug-icon.svg?w=280&fit=max&auto=format&n=C7bOrAKftvTohitd&q=85&s=09baf22cc2e6c073f10b227f30aad5cd 280w, https://mintcdn.com/mcp/C7bOrAKftvTohitd/images/claude-desktop-mcp-plug-icon.svg?w=560&fit=max&auto=format&n=C7bOrAKftvTohitd&q=85&s=58cda1b1044b529483adc75b2f9239f0 560w, https://mintcdn.com/mcp/C7bOrAKftvTohitd/images/claude-desktop-mcp-plug-icon.svg?w=840&fit=max&auto=format&n=C7bOrAKftvTohitd&q=85&s=ee8269c651c630de20069fd272930ac0 840w, https://mintcdn.com/mcp/C7bOrAKftvTohitd/images/claude-desktop-mcp-plug-icon.svg?w=1100&fit=max&auto=format&n=C7bOrAKftvTohitd&q=85&s=679d12146c6b954a7775c26f47daec9e 1100w, https://mintcdn.com/mcp/C7bOrAKftvTohitd/images/claude-desktop-mcp-plug-icon.svg?w=1650&fit=max&auto=format&n=C7bOrAKftvTohitd&q=85&s=2faae164af5faed3b21faae871a381f9 1650w, https://mintcdn.com/mcp/C7bOrAKftvTohitd/images/claude-desktop-mcp-plug-icon.svg?w=2500&fit=max&auto=format&n=C7bOrAKftvTohitd&q=85&s=c11cee0a2e57b283a364d31d8954c31e 2500w" /> icon to view:
@@ -291,3 +292,4 @@ https://mintcdn.com/mcp/C7bOrAKftvTohitd/images/claude-desktop-mcp-slider.svg?w=
 https://mintcdn.com/mcp/C7bOrAKftvTohitd/images/claude-desktop-mcp-slider.svg?w=840&fit=max&auto=format&n=C7bOrAKftvTohitd&q=85&s=b2d3e7bb033528b23755cb6baa68ba5d
 https://mintcdn.com/mcp/C7bOrAKftvTohitd/images/claude-desktop-mcp-slider.svg?w=1100&fit=max&auto=format&n=C7bOrAKftvTohitd&q=85&s=caa4d44e51ed46ccba9213093d8b2dc1
 https://mintcdn.com/mcp/C7bOrAKftvTohitd/images/claude-desktop-mcp-slider.svg?w=280&fit=max&auto=format&n=C7bOrAKftvTohitd&q=85&s=ed9957d9dc43c95976a8b40e414b932d
+`
