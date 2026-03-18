@@ -1,4 +1,4 @@
-Main
+README
 ---
 [![CodeFactor](https://www.codefactor.io/repository/github/phantomtech573/fantastic-computing-machine-/badge)](https://www.codefactor.io/repository/github/phantomtech573/fantastic-computing-machine-
 ---
@@ -306,3 +306,4 @@ https://mintcdn.com/mcp/C7bOrAKftvTohitd/images/claude-desktop-mcp-slider.svg?w=
 https://mintcdn.com/mcp/C7bOrAKftvTohitd/images/claude-desktop-mcp-slider.svg?w=840&fit=max&auto=format&n=C7bOrAKftvTohitd&q=85&s=b2d3e7bb033528b23755cb6baa68ba5d
 https://mintcdn.com/mcp/C7bOrAKftvTohitd/images/claude-desktop-mcp-slider.svg?w=1100&fit=max&auto=format&n=C7bOrAKftvTohitd&q=85&s=caa4d44e51ed46ccba9213093d8b2dc1
 https://mintcdn.com/mcp/C7bOrAKftvTohitd/images/claude-desktop-mcp-slider.svg?w=280&fit=max&auto=format&n=C7bOrAKftvTohitd&q=85&s=ed9957d9dc43c95976a8b40e414b932d
+Main
