@@ -1,3 +1,5 @@
+#~Build.config.js
+  #.$.cofig.js
 ```### fantastic-computing-machine-io ###```
 ```[pull request](https-github.com-pimpn-droid-knot-XVOiBO-XVOiBO-B)```
 ```Push update release 
@@ -9,7 +11,7 @@ pull release update from
 > Fetch the complete documentation index 
 https-modelcontextprotocol-io-llms-txt```
 > Use this file to discover all available pages before exploring further.
-``
+```
 # Debugging
 • A comprehensive guide to debugging 
   •Model Context Protocol (MCP) integrations
@@ -22,11 +24,11 @@ https-modelcontextprotocol-io-llms-txt```
 <Info>
   This guide is for macOS. Guides for other platforms are coming soon.
 </Info>
-
+```
 ## Debugging tools overview
 
 MCP provides several tools for debugging at different levels:
-
+```
 1. **MCP Inspector**
    * Interactive debugging interface
    * Direct server testing
@@ -41,9 +43,8 @@ MCP provides several tools for debugging at different levels:
    * Custom logging implementations
    * Error tracking
    * Performance monitoring
-
+```
 ## Debugging in Claude Desktop
-
 ### Checking server status
 
 The Claude.app interface provides basic server status information:
@@ -54,25 +55,23 @@ The Claude.app interface provides basic server status information:
 
 2. Click the "Search and tools" <img src="https://mintcdn.com/mcp/C7bOrAKftvTohitd/images/claude-desktop-mcp-slider.svg?fit=max&auto=format&n=C7bOrAKftvTohitd&q=85&s=6968a0ba9822c5f41dfeb719bbb7548b" style={{display: 'inline', margin: 0, height: '1.3em'}} data-og-width="24" width="24" data-og-height="24" height="24" data-path="images/claude-desktop-mcp-slider.svg" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/mcp/C7bOrAKftvTohitd/images/claude-desktop-mcp-slider.svg?w=280&fit=max&auto=format&n=C7bOrAKftvTohitd&q=85&s=ed9957d9dc43c95976a8b40e414b932d 280w, https://mintcdn.com/mcp/C7bOrAKftvTohitd/images/claude-desktop-mcp-slider.svg?w=560&fit=max&auto=format&n=C7bOrAKftvTohitd&q=85&s=37ec89945a2d0a2f697c7013dc1982f7 560w, https://mintcdn.com/mcp/C7bOrAKftvTohitd/images/claude-desktop-mcp-slider.svg?w=840&fit=max&auto=format&n=C7bOrAKftvTohitd&q=85&s=b2d3e7bb033528b23755cb6baa68ba5d 840w, https://mintcdn.com/mcp/C7bOrAKftvTohitd/images/claude-desktop-mcp-slider.svg?w=1100&fit=max&auto=format&n=C7bOrAKftvTohitd&q=85&s=caa4d44e51ed46ccba9213093d8b2dc1 1100w, https://mintcdn.com/mcp/C7bOrAKftvTohitd/images/claude-desktop-mcp-slider.svg?w=1650&fit=max&auto=format&n=C7bOrAKftvTohitd&q=85&s=93ee7d62caea479b969cb4f6971f9fb6 1650w, https://mintcdn.com/mcp/C7bOrAKftvTohitd/images/claude-desktop-mcp-slider.svg?w=2500&fit=max&auto=format&n=C7bOrAKftvTohitd&q=85&s=b9a28be36fb4526992b18de4d5625047 2500w" /> icon to view:
    * Tools made available to the model
-
+```
 ### Viewing logs
-
 Review detailed MCP logs from Claude Desktop:
 
 ```bash  theme={null}
 # Follow logs in real-time
 tail -n 20 -F ~/Library/Logs/Claude/mcp*.log
 ```
-
+```
 The logs capture:
 
 * Server connection events
 * Configuration issues
 * Runtime errors
 * Message exchanges
-
+```
 ### Using Chrome DevTools
-
 Access Chrome's developer tools inside Claude Desktop to investigate client-side errors:
 
 1. Create a `developer_settings.json` file with `allowDevTools` set to true:
@@ -80,26 +79,22 @@ Access Chrome's developer tools inside Claude Desktop to investigate client-side
 ```bash  theme={null}
 echo '{"allowDevTools": true}' > ~/Library/Application\ Support/Claude/developer_settings.json
 ```
-
+```
 2. Open DevTools: `Command-Option-Shift-i`
 
 Note: You'll see two DevTools windows:
-
 * Main content window
 * App title bar window
 
 Use the Console panel to inspect client-side errors.
-
 Use the Network panel to inspect:
 
 * Message payloads
 * Connection timing
-
-## Common issues
-
-### Working directory
-
-When using MCP servers with Claude Desktop:
+```
+# Common issues
+## Working directory
+### When using MCP servers with Claude Desktop:
 
 * The working directory for servers launched via `claude_desktop_config.json` may be undefined (like `/` on macOS) since Claude Desktop could be started from anywhere
 * Always use absolute paths in your configuration and `.env` files to ensure reliable operation
@@ -117,7 +112,6 @@ For example in `claude_desktop_config.json`, use:
   ]
 }
 ```
-
 Instead of relative paths like `./data`
 
 ### Environment variables
@@ -136,9 +130,8 @@ To override the default variables or provide your own, you can specify an `env` 
   }
 }
 ```
-
+```
 ### Server initialization
-
 Common initialization problems:
 
 1. **Path Issues**
@@ -156,22 +149,20 @@ Common initialization problems:
    * Missing environment variables
    * Incorrect variable values
    * Permission restrictions
-
+```
 ### Connection problems
-
 When servers fail to connect:
 
 1. Check Claude Desktop logs
 2. Verify server process is running
 3. Test standalone with [Inspector](/docs/tools/inspector)
 4. Verify protocol compatibility
-
+```
 ## Implementing logging
-
 ### Server-side logging
 
 When building a server that uses the local stdio [transport](/legacy/concepts/transports), all messages logged to stderr (standard error) will be captured by the host application (e.g., Claude Desktop) automatically.
-
+```
 <Warning>
   Local MCP servers should not log messages to stdout (standard out), as this will interfere with protocol operation.
 </Warning>
@@ -192,8 +183,8 @@ For all [transports](/legacy/concepts/transports), you can also provide logging 
     data: "Server started successfully",
   });
   ```
-</CodeGroup>
-
+</CodeGroup>```
+```
 Important events to log:
 
 * Initialization steps
@@ -201,18 +192,16 @@ Important events to log:
 * Tool execution
 * Error conditions
 * Performance metrics
-
+```
 ### Client-side logging
-
-In client applications:
+## In client applications:
 
 1. Enable debug logging
 2. Monitor network traffic
 3. Track message exchanges
 4. Record error states
-
+```
 ## Debugging workflow
-
 ### Development cycle
 
 1. Initial Development
@@ -224,18 +213,16 @@ In client applications:
    * Test in Claude Desktop
    * Monitor logs
    * Check error handling
-
+```
 ### Testing changes
-
 To test changes efficiently:
 
 * **Configuration changes**: Restart Claude Desktop
 * **Server code changes**: Use Command-R to reload
 * **Quick iteration**: Use [Inspector](/legacy/tools/inspector) during development
-
-## Best practices
-
-### Logging strategy
+```
+## Best practices ##
+  # Logging strategy 
 
 1. **Structured Logging**
    * Use consistent formats
@@ -254,11 +241,10 @@ To test changes efficiently:
    * Monitor resource usage
    * Track message sizes
    * Measure latency
-
+```
 ### Security considerations
 
 When debugging:
-
 1. **Sensitive Data**
    * Sanitize logs
    * Protect credentials
@@ -268,9 +254,8 @@ When debugging:
    * Verify permissions
    * Check authentication
    * Monitor access patterns
-
+```
 ## Getting help
-
 When encountering issues:
 
 1. **First Steps**
@@ -288,17 +273,17 @@ When encountering issues:
    * Configuration files
    * Steps to reproduce
    * Environment details
-
+```
+```
 ## Next steps
-
 <CardGroup cols={2}>
   <Card title="MCP Inspector" icon="magnifying-glass" href="/legacy/tools/inspector">
     Learn to use the MCP Inspector
   </Card>
-</CardGroup>
-https://modelcontextprotocol.io/docs/getting-started/intro
-https://mintcdn.com/mcp/C7bOrAKftvTohitd/images/claude-desktop-mcp-slider.svg?w=1650&fit=max&auto=format&n=C7bOrAKftvTohitd&q=85&s=93ee7d62caea479b969cb4f6971f9fb6
-https://mintcdn.com/mcp/C7bOrAKftvTohitd/images/claude-desktop-mcp-slider.svg?w=2500&fit=max&auto=format&n=C7bOrAKftvTohitd&q=85&s=b9a28be36fb4526992b18de4d5625047
-https://mintcdn.com/mcp/C7bOrAKftvTohitd/images/claude-desktop-mcp-slider.svg?w=840&fit=max&auto=format&n=C7bOrAKftvTohitd&q=85&s=b2d3e7bb033528b23755cb6baa68ba5d
-https://mintcdn.com/mcp/C7bOrAKftvTohitd/images/claude-desktop-mcp-slider.svg?w=1100&fit=max&auto=format&n=C7bOrAKftvTohitd&q=85&s=caa4d44e51ed46ccba9213093d8b2dc1
-https://mintcdn.com/mcp/C7bOrAKftvTohitd/images/claude-desktop-mcp-slider.svg?w=280&fit=max&auto=format&n=C7bOrAKftvTohitd&q=85&s=ed9957d9dc43c95976a8b40e414b932d
+</CardGroup>```
+"https://modelcontextprotocol.io/docs/getting-started/intro"
+"https://mintcdn.com/mcp/C7bOrAKftvTohitd/images/claude-desktop-mcp-slider.svg?w=1650&fit=max&auto=format&n=C7bOrAKftvTohitd&q=85&s=93ee7d62caea479b969cb4f6971f9fb6"
+"https://mintcdn.com/mcp/C7bOrAKftvTohitd/images/claude-desktop-mcp-slider.svg?w=2500&fit=max&auto=format&n=C7bOrAKftvTohitd&q=85&s=b9a28be36fb4526992b18de4d5625047"
+"https://mintcdn.com/mcp/C7bOrAKftvTohitd/images/claude-desktop-mcp-slider.svg?w=840&fit=max&auto=format&n=C7bOrAKftvTohitd&q=85&s=b2d3e7bb033528b23755cb6baa68ba5d"
+"https://mintcdn.com/mcp/C7bOrAKftvTohitd/images/claude-desktop-mcp-slider.svg?w=1100&fit=max&auto=format&n=C7bOrAKftvTohitd&q=85&s=caa4d44e51ed46ccba9213093d8b2dc1"
+"https://mintcdn.com/mcp/C7bOrAKftvTohitd/images/claude-desktop-mcp-slider.svg?w=280&fit=max&auto=format&n=C7bOrAKftvTohitd&q=85&s=ed9957d9dc43c95976a8b40e414b932d"
