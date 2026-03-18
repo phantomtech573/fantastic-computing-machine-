@@ -1,16 +1,24 @@
-[pull request](https://github.com/pimpn-droid-knot/XVOiBO/XVOiBO-B)
-Push update release @phantomtech573/fantastic-computing-machine/README.md
-pull release update from @phantomtech573/fantastic-computing-machine/README.md
-> ## Documentation Index
-> Fetch the complete documentation index at: https://modelcontextprotocol.io/llms.txt
+```### fantastic-computing-machine-io ###```
+```[pull request](https-github.com-pimpn-droid-knot-XVOiBO-XVOiBO-B)```
+```Push update release 
+  @phantomtech573-fantastic-computing-machine-README-md
+pull release update from 
+@phantomtech573-fantastic-computing-machine-README.md
+```
+ ## Documentation Index```
+> Fetch the complete documentation index 
+https-modelcontextprotocol-io-llms-txt```
 > Use this file to discover all available pages before exploring further.
-
+``
 # Debugging
+• A comprehensive guide to debugging 
+  •Model Context Protocol (MCP) integrations
 
-> A comprehensive guide to debugging Model Context Protocol (MCP) integrations
-
-Effective debugging is essential when developing MCP servers or integrating them with applications. This guide covers the debugging tools and approaches available in the MCP ecosystem.
-
+# Effective debugging is essential 
+  • when developing MCP servers
+    •integrating them with applications. 
+      • debugging tools and approaches available in the MCP ecosystem.
+```
 <Info>
   This guide is for macOS. Guides for other platforms are coming soon.
 </Info>
