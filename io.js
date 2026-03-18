@@ -1,4 +1,5 @@
-[![CodeFactor](https://www.codefactor.io/repository/github/phantomtech573/fantastic-computing-machine-/badge)](https://www.codefactor.io/repository/github/phantomtech573/fantastic-computing-machine-)
+[![CodeFactor](https://www.codefactor.io/repository/github/phantomtech573/fantastic-computing-machine-/badge)](https://www.codefactor.io/repository/github/phantomtech573/fantastic-computing-machine-
+---
 ```### fantastic-computing-machine-io ###```
 ```[pull request](https-github.com-pimpn-droid-knot-XVOiBO-XVOiBO-B)```
 ```Push update release 
